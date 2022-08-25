@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  border: 1px solid #cccccc;
+  box-shadow: #cccccc;
+  margin: 8px;
+  padding: 16px;
+  align-items: center;
+
+  .avatar {
+    max-width: 80px;
+    margin-right: 16px;
+
+    .img {
+      width: 100%;
+    }
+  }
+
+  .name {
+    width: 100%;
+  }
+}

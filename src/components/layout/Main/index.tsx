@@ -9,7 +9,9 @@ interface Main {
 const Main = ({ children }: Main):JSX.Element => (
   <div className={styles.wrapper}>
     <Header />
-    {children}
+    <main className={styles.main}>
+      {children}
+    </main>
   </div>
 );
 
