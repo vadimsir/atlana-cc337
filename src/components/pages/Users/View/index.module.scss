@@ -1,0 +1,30 @@
+.content {
+
+  .title {
+    margin: 0 0 32px;
+  }
+
+  .main {
+    display: flex;
+
+    .avatar {
+      width: 300px;
+      margin-right: 32px;
+
+      .img {
+        width: 100%;
+      }
+    }
+
+    .info {
+
+    }
+  }
+
+  .search {
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+    box-sizing: border-box;
+  }
+}
