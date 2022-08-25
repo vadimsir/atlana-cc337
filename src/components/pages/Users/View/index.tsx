@@ -60,9 +60,11 @@ const View = (): JSX.Element => {
           />
           {repositoriesGetId.loading ? (
             <div>Loading...</div>
-          ) : repositoriesGetId.data.filter((repo) => repo.name.includes(value)).map((repo) => (
-            <CardRepo key={repo.id} repo={repo} />
-          ))}
+          ) : repositoriesGetId.data
+            .filter((repo) => repo.name.toLowerCase().includes(value.toLowerCase()))
+            .map((repo) => (
+              <CardRepo key={repo.id} repo={repo} />
+            ))}
         </div>
       )}
     </div>
