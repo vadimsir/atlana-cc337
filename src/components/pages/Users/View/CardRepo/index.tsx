@@ -8,7 +8,11 @@ interface CardRepo {
 
 const CardRepo = ({ repo }: CardRepo): JSX.Element => (
   <div className={styles.wrapper}>
-    <div>{repo.name}</div>
+    <div>
+      <a href={repo.html_url} target="_blank" rel="noreferrer">
+        {repo.name}
+      </a>
+    </div>
     <div>
       <div>
         {repo.forks_count}
