@@ -1,7 +1,8 @@
 import React from 'react';
+import Routes from './routes';
 
 const App = (): JSX.Element => (
-  <h1>Atlana test app</h1>
+  <Routes />
 );
 
 export default App;
