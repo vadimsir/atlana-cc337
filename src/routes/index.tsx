@@ -6,26 +6,33 @@ import UserView from '../pages/Users/View';
 
 export interface Route {
   bind: RouteProps;
+  name?: string;
+  hideInMenu: boolean;
 }
 
-const routes: Route[] = [
+export const routes: Route[] = [
   {
     bind: {
       path: '/users',
       element: <Users />,
     },
+    name: 'Users',
+    hideInMenu: false,
   },
   {
     bind: {
       element: <UserView />,
       path: '/users/:id',
     },
+    name: 'User View',
+    hideInMenu: true,
   },
   {
     bind: {
       path: '/*',
       element: <Users />,
     },
+    hideInMenu: true,
   },
 ];
 
